@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Источник макета Telegram-канал [FIGMA | Макеты для верстки](https://t.me/+oXZSKMmXp6UyOGI6)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch sass/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.63.6",
+    "scss": "^0.2.4"
+  }
+}
