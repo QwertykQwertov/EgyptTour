@@ -6,12 +6,13 @@
   <title>FIGMA | Макеты для верстки — Верстка страницы</title>
   <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <!-- Начало: Данный блок удалять нельзя -->
-  <div class="maketforfigma">
+  <!-- <div class="maketforfigma">
     <a href="https://t.me/s/FigmaToHTML" target="_blank">
       <img src="img/logo.png">
     </a>
@@ -25,27 +26,27 @@
         получил оплату за верстку этого макета.
       </p>
     </div>
-  </div>
+  </div> -->
   <!-- Конец -->
 
   <div class="main">
     <header class="header">
       <div class="header-left">
-        <div class="header-logo">EgyptTour</div>
-        <div class="header-line"></div>
+        <div class="header-logo"><h1>EgyptTour</h1></div>
+        <div class="header-line"><p>|</p></div>
         <div class="header-search-wrapper">
-          <div class="search-logo"></div>
-          <input type="text" name="search" id="search" placeholder="search">
+          <div class="search-logo"> <img src="./img/search.png" alt=""></div>
+          <input class="search-input" type="text" name="search" id="search" placeholder="Search">
         </div>
       </div>
       <div class="header-right">
         <nav class="navigation">
           <ul class="navigation-li">
-            <li class="navigation-link">Home</li>
-            <li class="navigation-link">Guides</li>
-            <li class="navigation-link">About</li>
-            <li class="navigation-link">Inspiration</li>
-            <li class="navigation-link">Contacts</li>
+            <li><a href="#" class="navigation-link">Home</a></li>
+            <li><a href="#" class="navigation-link">Guides</a></li>
+            <li><a href="#" class="navigation-link">About</a></li>
+            <li><a href="#" class="navigation-link">Inspiration</a></li>
+            <li><a href="#" class="navigation-link">Contact</a></li>
           </ul>
         </nav>
         <button class="button header-button">Sign Up</button>
@@ -53,7 +54,7 @@
     </header>
     <main>
       <section class="preview">
-        <img src="./img/main.png" alt="Egypt's sand">
+        <img class="preview-image" src="./img/main.png" alt="Egypt's sand">
       </section>
       <section class="filter">
         <select name="" id=""></select>

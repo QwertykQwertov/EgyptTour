@@ -1,15 +1,21 @@
+.button {
+  @include font(17px, 22px, 700);
+  font-family: MontLight;
 
+  padding: 20px 30px;
+  border: none;
+  border-radius: 12px;
 
-.home-button {
-  width: 219px;
-  height: 82px;
-  @include font(1.9rem, 3.2rem);
-  @include flex(end, center);
+  background-color: $main-color;
+  color: $text-light-color;
 
-  gap: 24px;
+  cursor: pointer;
 
-  // background: $color-yellow;
-  // border: 1px solid $color-yellow;
-  border-radius: 16px;
-  // color: $color-main;
+  &:hover {
+    background-color: $main-color-hover;
+  }
 }
+
+
+// width: Hug (126px)
+// height: Hug (62px)
