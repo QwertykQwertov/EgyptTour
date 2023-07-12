@@ -32,8 +32,12 @@
   <div class="main">
     <header class="header">
       <div class="header-left">
-        <div class="header-logo"><h1>EgyptTour</h1></div>
-        <div class="header-line"><p>|</p></div>
+        <div class="header-logo">
+          <h1>EgyptTour</h1>
+        </div>
+        <div class="header-line">
+          <p>|</p>
+        </div>
         <div class="header-search-wrapper">
           <div class="search-logo"> <img src="./img/search.png" alt=""></div>
           <input class="search-input" type="text" name="search" id="search" placeholder="Search">
@@ -57,11 +61,36 @@
         <img class="preview-image" src="./img/main.png" alt="Egypt's sand">
       </section>
       <section class="filter">
-        <select name="" id=""></select>
-        <select name="" id=""></select>
-        <select name="" id=""></select>
-        <select name="" id=""></select>
-        <button class="button select-button"></button>
+        <!-- <div class="filter-settings-wrapper"></div> -->
+        <div class="select-wrapper">
+          <label class="filter-label" for="gender">Gender</label>
+          <select class="filter-select" name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <label class="filter-label" for="age">Age</label>
+          <select class="filter-select" name="age" id="age">
+            <option value="male">24+</option>
+            <option value="female">18+</option>
+            <option value="female">16+</option>
+            <option value="female">14+</option>
+          </select></div>
+        <div class="select-wrapper">
+          <label class="filter-label" for="language">Language</label>
+          <select class="filter-select" name="language" id="language">
+            <option value="male">English, Arabic</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <label class="filter-label" for="localisation">Localisation</label>
+          <select class="filter-select" name="localisation" id="localisation">
+            <option value="male">Cairo</option>
+            <option value="female">Hurghada</option>
+          </select>
+        </div>
+        <button class="button select-button">Search</button>
       </section>
 
     </main>
