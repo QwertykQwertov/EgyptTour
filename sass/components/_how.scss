@@ -1,0 +1,30 @@
+.how-title-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.how-card-wrapper {
+  @include flex(space-between);
+  max-width: 1240px;
+  margin: 102px auto;
+}
+
+.how-card {
+  @include flex(normal, center);
+  box-sizing: border-box;
+  flex-direction: column;
+
+  padding: 44px;
+  width: 393px;
+  height: 546px;
+  border-radius: 20px;
+  background-color: $accent-color;
+  
+}
+
+.how-card-title {
+  @include font(40px, 50px, 700, normal, 0em);
+  font-family: MontLight;
+  text-align: center;
+
+}
