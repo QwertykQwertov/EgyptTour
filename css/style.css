@@ -339,12 +339,16 @@ template {
 }
 
 @font-face {
-  font-family: Mont;
+  font-family: MontBold;
   src: url("../fonts/Mont/Mont-HeavyDEMO.otf") format("opentype");
 }
 @font-face {
   font-family: MontLight;
   src: url("../fonts/Mont/Mont-ExtraLightDEMO.otf") format("opentype");
+}
+@font-face {
+  font-family: Mont;
+  src: url("/fonts/Mont/Mont-Regular.woff") format("woff");
 }
 html {
   font-size: 10px;
@@ -352,7 +356,6 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #F2F2F2;
 }
 
 .not-overflow {
@@ -377,7 +380,7 @@ body {
   display: flex;
   justify-content: normal;
   align-items: center;
-  gap: 20px;
+  gap: 23px;
 }
 
 h1 {
@@ -390,6 +393,7 @@ h1 {
 }
 
 .header-line > p {
+  font-family: Mont;
   font-size: 32px;
   font-weight: bold;
   color: rgba(11, 6, 20, 0.3019607843);
@@ -408,7 +412,7 @@ h1 {
   font-weight: 700;
   line-height: 20.45px;
   letter-spacing: 0.36px;
-  font-family: MontLight;
+  font-family: Mont;
   color: rgba(11, 6, 20, 0.3019607843);
   border: none;
   background: transparent;
@@ -426,14 +430,13 @@ h1 {
   justify-content: normal;
   align-items: center;
   list-style: none;
-  gap: 42px;
+  gap: 41px;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0em;
-  font-family: MontLight;
-  font-size: 16px;
+  font-family: Mont;
 }
 
 .navigation-link {
@@ -457,6 +460,7 @@ h1 {
   border-radius: 24px;
   gap: 22px;
   background-color: #FFFFFF;
+  box-shadow: 0px 30px 60px 0px rgba(198, 191, 191, 0.1490196078);
 }
 
 .select-wrapper {
@@ -474,7 +478,7 @@ h1 {
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0;
-  font-family: MontLight;
+  font-family: Mont;
 }
 
 .filter-select {
@@ -527,6 +531,7 @@ h1 {
   padding: 38px 49px 24px;
   border-radius: 20px;
   background-color: #FFFFFF;
+  box-shadow: 0px 30px 60px 0px rgba(198, 191, 191, 0.1490196078);
 }
 
 .guides-img {
@@ -588,13 +593,184 @@ h1 {
   color: #FF5029;
 }
 
+.how-title-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.how-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  max-width: 1240px;
+  margin: 102px auto 190px;
+}
+
+.how-card {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 44px;
+  width: 393px;
+  height: 546px;
+  border-radius: 20px;
+  background-color: #FEF4F5;
+}
+
+.how-card-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  font-family: Mont;
+  text-align: center;
+}
+
+.references {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  max-width: 1240px;
+  margin: -116px auto;
+  position: relative;
+  z-index: 1;
+  height: 227px;
+  box-sizing: border-box;
+  padding: 6px 40px 0 45px;
+  border-radius: 24px;
+  box-shadow: 0px 30px 60px 0px rgba(198, 191, 191, 0.1490196078);
+  background-color: #FFFFFF;
+}
+
+.references-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  font-family: Mont;
+}
+
+.references-text-select {
+  color: #FF5029;
+}
+
+.references-info {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  margin-top: 26px;
+  gap: 15px;
+}
+
+.references-info-img-wrapper {
+  padding-left: 25px;
+}
+
+.references-img {
+  margin-left: -25px;
+}
+
+.references-text {
+  margin-top: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  font-family: Mont;
+  color: rgba(11, 6, 20, 0.6);
+}
+.references-text .references-text-select {
+  font-weight: 800;
+}
+
+.about {
+  max-width: 1240px;
+  margin: 304px auto;
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-direction: column;
+  gap: 103px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  width: 100%;
+}
+
+.about-content-right {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-card {
+  padding: 30px;
+  box-shadow: 0px 30px 60px 0px rgba(198, 191, 191, 0.1490196078);
+  width: 605px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.about-card-big {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.about-card-small {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  gap: 30px;
+}
+
+.badge {
+  padding: 8px 30px 8px 20px;
+  border: none;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: #FEF4F5;
+}
+.badge p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  font-family: Mont;
+  color: #FF5029;
+  margin: 0;
+}
+
+.about-card-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  font-family: Mont;
+  margin: 22px 0 0;
+}
+
 .button {
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.36px;
-  font-family: MontLight;
+  font-family: Mont;
   padding: 20px 30px;
   border: none;
   border-radius: 12px;
@@ -613,6 +789,11 @@ h1 {
 
 .search-button {
   padding: 24px 42px;
+}
+
+.button-references {
+  padding: 23px 42px;
+  margin-top: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

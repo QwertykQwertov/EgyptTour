@@ -6,7 +6,7 @@
 
 .header-left {
   @include flex(normal, center);
-  gap: 20px;
+  gap: 23px;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
 }
 
 .header-line>p {
+  font-family: Mont;
   font-size: 32px;
   font-weight: bold;
   color: $text-dark-30-color;
@@ -27,7 +28,7 @@ h1 {
 
 .search-input {
   @include font(16px, 20.45px, 700, normal);
-  font-family: MontLight;
+  font-family: Mont;
   color: $text-dark-30-color;
   border: none;
   background: transparent;
@@ -42,11 +43,10 @@ h1 {
 .navigation-li {
   @include flex(normal, center);
   list-style: none;
-  gap: 42px;
+  gap: 41px;
 
   @include font(16px, 20px, 700, normal, 0em);
-  font-family: MontLight;
-  font-size: 16px;
+  font-family: Mont;
 }
 
 .navigation-link {

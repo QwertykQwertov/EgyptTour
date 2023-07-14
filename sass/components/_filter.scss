@@ -10,7 +10,7 @@
 
   background-color: $text-light-color;
   // background-color: azure;
-
+  box-shadow: 0px 30px 60px 0px $main-shadow;
 }
 
 .select-wrapper {
@@ -22,7 +22,7 @@
 
 .filter-label {
   @include font(16px, 20px, 600, normal, 0);
-  font-family: MontLight;
+  font-family: Mont;
 }
 
 .filter-select {
