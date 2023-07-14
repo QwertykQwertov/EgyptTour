@@ -7,6 +7,7 @@
   <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/ff0fc7a50f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -57,11 +58,12 @@
       </div>
     </header>
     <main>
+      <!--preview -->
       <section class="preview">
         <img class="preview-image" src="./img/main.png" alt="Egypt's sand">
       </section>
+      <!-- filter -->
       <section class="filter">
-        <!-- <div class="filter-settings-wrapper"></div> -->
         <div class="select-wrapper">
           <label class="filter-label" for="gender">Gender</label>
           <select class="filter-select" name="gender" id="gender">
@@ -76,7 +78,8 @@
             <option value="female">18+</option>
             <option value="female">16+</option>
             <option value="female">14+</option>
-          </select></div>
+          </select>
+        </div>
         <div class="select-wrapper">
           <label class="filter-label" for="language">Language</label>
           <select class="filter-select" name="language" id="language">
@@ -91,6 +94,72 @@
           </select>
         </div>
         <button class="button select-button">Search</button>
+      </section>
+      <!-- guides -->
+      <section class="guides">
+        <div class="guides-title-wrapper">
+          <h2 class="guides-title">Guides for you!</h2>
+          <button class="button search-button">See All Guides</button>
+        </div>
+        <div class="guides-card-wrapper">
+          <div class="guides-card guides-card-active">
+            <img src="./img/abayomi_malik.png" alt="Abayomi Mallik" class="guides-img">
+            <div class="guides-card-info">
+              <h4 class="guides-card-title">Abayomi Mallik</h4>
+              <div class="guides-stars">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+              </div>
+              <p class="guides-reviews">1000+ reviews</p>
+            </div>
+          </div>
+          <div class="guides-card">
+            <img src="./img/berenike.png" alt="Berenike Eman" class="guides-img">
+            <div class="guides-card-info">
+              <h4 class="guides-card-title">Berenike Eman</h4>
+              <div class="guides-stars">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+              </div>
+              <p class="guides-reviews">1000+ reviews</p>
+            </div>
+          </div>
+          <div class="guides-card">
+            <img src="./img/abu_bakar.png" alt="Abu Bakar" class="guides-img">
+            <div class="guides-card-info">
+              <h4 class="guides-card-title">Abu Bakar</h4>
+              <div class="guides-stars">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                
+              </div>
+              <p class="guides-reviews">1000+ reviews</p>
+            </div>
+          </div>
+          <div class="guides-card">
+            <img src="./img/dendera_heba.png" alt="Dendera Heba" class="guides-img">
+            <div class="guides-card-info">
+              <h4 class="guides-card-title">Dendera Heba</h4>
+              <div class="guides-stars">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+              </div>
+              <p class="guides-reviews">1000+ reviews</p>
+            </div>
+          </div>
+        </div>
       </section>
 
     </main>
