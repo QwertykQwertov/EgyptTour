@@ -1,0 +1,63 @@
+.about {
+  max-width: 1240px;
+  margin: 304px auto;
+
+  @include flex(normal, center);
+  flex-direction: column;
+  gap: 103px;
+}
+
+.about-content {
+  @include flex(space-between);
+  width: 100%;
+}
+
+.about-content-right {
+  @include flex();
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-card {
+  padding: 30px;
+  box-shadow: 0px 30px 60px 0px $main-shadow;
+  width: 605px;
+
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.about-card-big {
+  @include flex();
+  flex-direction: column;
+  gap: 29px;
+
+}
+
+.about-card-small {
+  @include flex(normal, center);
+  gap: 30px;
+}
+
+.badge {
+  padding: 8px 30px 8px 20px;
+
+  border: none;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+  background-color: $accent-color;
+
+  & p {
+    @include font(24px, 31px, 700, normal, 0em);
+    font-family: Mont;
+    color: $main-color;
+    margin: 0;
+  }
+}
+
+.about-card-title {
+  @include font(40px, 52px, 700, normal, 0em);
+  font-family: Mont;
+  margin: 22px 0 0;
+}

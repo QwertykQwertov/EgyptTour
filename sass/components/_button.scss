@@ -1,6 +1,6 @@
 .button {
   @include font(17px, 22px, 700);
-  font-family: MontLight;
+  font-family: Mont;
 
   padding: 20px 30px;
   border: none;
@@ -23,6 +23,11 @@
 
 .search-button {
   padding: 24px 42px;
+}
+
+.button-references {
+  padding: 23px 42px;
+  margin-top: 35px;
 }
 
 

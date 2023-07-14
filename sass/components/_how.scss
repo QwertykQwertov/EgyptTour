@@ -6,7 +6,7 @@
 .how-card-wrapper {
   @include flex(space-between);
   max-width: 1240px;
-  margin: 102px auto;
+  margin: 102px auto 190px;
 }
 
 .how-card {
@@ -19,12 +19,12 @@
   height: 546px;
   border-radius: 20px;
   background-color: $accent-color;
-  
+
 }
 
 .how-card-title {
   @include font(40px, 50px, 700, normal, 0em);
-  font-family: MontLight;
+  font-family: Mont;
   text-align: center;
 
 }
