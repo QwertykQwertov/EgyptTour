@@ -352,6 +352,7 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: #F2F2F2;
 }
 
 .not-overflow {
@@ -410,6 +411,7 @@ h1 {
   font-family: MontLight;
   color: rgba(11, 6, 20, 0.3019607843);
   border: none;
+  background: transparent;
 }
 
 .header-right {
@@ -484,27 +486,106 @@ h1 {
   font-family: Mont;
   border: none;
   margin-right: 30px;
+  background-color: #FFFFFF;
 }
 
-.sale-content {
-  margin: 139px auto;
-  max-width: 1380px;
+.guides {
+  max-width: 1245px;
+  margin: 189px auto;
+}
+
+.guides-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.guides-title {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: 0em;
+  font-family: Mont;
+  margin: 0;
+}
+
+.guides-card-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: normal;
+  margin-top: 101px;
 }
 
-.sale-card {
-  width: 665px;
-  height: 378px;
+.guides-card {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-direction: column;
+  padding: 38px 49px 24px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
 }
 
-.sale-card-left {
-  background-image: url("/img/banana.png");
+.guides-img {
+  border: 2px solid #FF5029;
+  border-radius: 50%;
 }
 
-.sale-card-right {
-  background-image: url("/img/apricot.png");
+.guides-card-info {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-direction: column;
+}
+
+.guides-stars {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  gap: 5px;
+}
+
+.guides-card-active {
+  background-color: #FF5029;
+}
+.guides-card-active .guides-card-title {
+  color: #FFFFFF;
+}
+.guides-card-active .star {
+  color: #FFFFFF;
+}
+.guides-card-active .guides-reviews {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.guides-card-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-family: Mont;
+  color: #0B0614;
+  margin-bottom: 12px;
+}
+
+.guides-reviews {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-top: 9px;
+  font-family: Mont;
+  color: rgba(11, 6, 20, 0.6);
+}
+
+.star {
+  font-size: 19px;
+  color: #FF5029;
 }
 
 .button {
@@ -528,6 +609,10 @@ h1 {
 .select-button {
   padding: 29px 37px;
   border-radius: 16px;
+}
+
+.search-button {
+  padding: 24px 42px;
 }
 
 /*# sourceMappingURL=style.css.map */

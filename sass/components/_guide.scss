@@ -1,0 +1,82 @@
+.guides {
+  max-width: 1245px;
+  margin: 189px auto;
+}
+
+.guides-title-wrapper {
+  @include flex(space-between, center);
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.guides-title {
+  @include font(64px, 70px, 800, normal, 0em);
+  font-family: Mont;
+  margin: 0;
+}
+
+.guides-card-wrapper {
+  @include flex(space-between);
+  margin-top: 101px;
+
+}
+
+.guides-card {
+  @include flex(normal, center);
+  flex-direction: column;
+  padding: 38px 49px 24px;
+
+  border-radius: 20px;
+  background-color: $text-light-color;
+
+}
+
+.guides-img {
+  border: 2px solid $main-color;
+  border-radius: 50%;
+}
+
+.guides-card-info {
+  @include flex(normal, center);
+  flex-direction: column;
+}
+
+.guides-stars {
+  @include flex(center);
+  gap: 5px;
+}
+
+.guides-card-active {
+  background-color: $main-color;
+
+  & .guides-card-title {
+    color: $text-light-color;
+  }
+
+  & .star {
+    color: $text-light-color;
+  }
+
+  & .guides-reviews {
+    color: $text-light-60-color
+  }
+}
+
+.guides-card-title {
+  @include font(24px, 32px, 800, normal, 0em);
+  font-family: Mont;
+  color: $text-dark-color;
+  margin-bottom: 12px;
+}
+
+.guides-reviews {
+  @include font(16px, 22px, 600, normal, 0em);
+  margin-top: 9px;
+  font-family: Mont;
+  color: $text-dark-60-color;
+}
+
+.star {
+  font-size: 19px;
+  color: $main-color;
+}
